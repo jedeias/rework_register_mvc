@@ -2,17 +2,17 @@
 
     interface PersonControlle{
 
-        public function userName();
+        public function userName($neme);
 
-        public function userSurName();
+        public function userSurName($surName);
 
-        public function userSex();
+        public function userSex($sex);
 
-        public function userCpf();
+        public function userCpf($cpf);
 
-        public function userEmail();
+        public function userEmail($email);
 
-        public function userPassword();
+        public function userPassword($password);
         
     }
 

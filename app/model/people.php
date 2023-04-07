@@ -9,38 +9,44 @@
         private $email;
         private $password;
 
-        public function userName(){
+        public function userName($neme){
 
-
-        }
-
-        public function userSurName(){
-
+            $this->setUserName($Name);
 
         }
 
-        public function userSex(){
+        public function userSurName($surName){
 
+            $this->setUserSurName($surName);
 
         }
 
-        public function userCpf(){
+        public function userSex($sex){
 
+            $this->setUserSex($sex);
+
+        }
+
+        public function userCpf($cpf){
+
+            $this->setUserCpf($cpf);
         
         }
 
-        public function userEmail(){
+        public function userEmail($email){
 
+            $this->setUserEmail($email);
 
         }
 
-        public function userPassword(){
+        public function userPassword($password){
 
-            
+            $this->setUserPassword($password);
+
         }
 
 
-        #kaua wanna make set and get
+        #kaua wanna make set and get, now i have to wait for the get and set
     
     }
 
