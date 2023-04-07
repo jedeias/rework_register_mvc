@@ -11,7 +11,7 @@
 
         public function userName($neme){
 
-            $this->setUserName($Name);
+            $this->setUserName($name);
 
         }
 
