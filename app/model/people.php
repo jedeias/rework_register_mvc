@@ -9,16 +9,39 @@
         private $email;
         private $password;
 
-        private function getPeopleName(){
-            return $this ->name;
-        }
-        private function getPeopleName(){
-            return $this ->name;
-        }
-        private function getPeopleName(){
-            return $this ->name;
+        public function userName(){
+
+
         }
 
+        public function userSurName(){
+
+
+        }
+
+        public function userSex(){
+
+
+        }
+
+        public function userCpf(){
+
+        
+        }
+
+        public function userEmail(){
+
+
+        }
+
+        public function userPassword(){
+
+            
+        }
+
+
+        #kaua wanna make set and get
+    
     }
 
 ?>
