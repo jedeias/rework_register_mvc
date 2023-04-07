@@ -34,7 +34,6 @@ class Connect extends Host{
 	}
 }
 
-
 $conect = new Connect();
 
 ?>
