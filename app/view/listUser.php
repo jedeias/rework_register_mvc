@@ -10,7 +10,6 @@
     
     <table border="1">
 
-
         <tr>
             <td>COD</td>
             <td>NAME</td>
@@ -57,7 +56,7 @@
 
     </table>
 
-    <a href=""> <button> Cadastra <button> </a>
+    <a href=""> <button> Register <button> </a>
 
 </body>
 </html>
