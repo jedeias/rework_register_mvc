@@ -2,22 +2,22 @@
 
 class Crud extends Connect implements CrudController{
 
-    
-    public function insertInto()
-    {
-        # code...
-    }
+    private function insert(){
 
-    public function insert(){
+        
 
     }
 
-    public function update(){
+    private function update(){
 
     }
 
-    public function delete(){
+    private function delete(){
 
+    }
+
+    public function insertInto(){
+        
     }
 
 }
