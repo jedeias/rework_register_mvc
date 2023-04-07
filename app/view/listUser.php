@@ -56,7 +56,7 @@
 
     </table>
 
-    <a href=""> <button> Register <button> </a>
+    <a href="register.html"> <button> Register <button> </a>
 
 </body>
 </html>

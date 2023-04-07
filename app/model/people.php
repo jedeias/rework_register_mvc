@@ -9,9 +9,47 @@
         private $email;
         private $password;
 
-        public function userName($neme){
+
+        private function getUserName(){
+            return $this ->name;
+        }
+        public function setUserName($name){
+            $this ->name = $name;
+        }
+        private function getUserSurname(){
+            return $this ->surname;
+        }
+        public function setUserSurname($surname){
+            $this ->surname = $surname;
+        }
+        private function getUserSex(){
+            return $this ->sex;
+        }
+        public function setUserSex($sex){
+            $this ->sex = $sex;
+        }
+        private function getUserCpf(){
+            return $this ->cpf;
+        }
+        public function setUserCpf($cpf){
+             $this ->cpf = $cpf;
+        }
+        private function getUserEmail(){
+            return $this ->email;
+        }
+        public function setUserEmail($email){
+            $this ->email = $email;
+        }
+        private function getUserPassword(){
+            return $this ->password;
+        }
+        public function setUserPassword($password){
+            $this ->password = $password;
+        }
+        public function userName($name){
 
             $this->setUserName($name);
+
 
         }
 
