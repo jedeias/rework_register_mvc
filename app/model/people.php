@@ -1,16 +1,21 @@
 <?php 
 
-    class People{
+    class People implements PersonControlle{
 
         private $name;
         private $surname;
         private $sex;
         private $cpf;
         private $email;
-        private $senha;
+        private $password;
 
-
-        public function getName(){
+        private function getPeopleName(){
+            return $this ->name;
+        }
+        private function getPeopleName(){
+            return $this ->name;
+        }
+        private function getPeopleName(){
             return $this ->name;
         }
 
