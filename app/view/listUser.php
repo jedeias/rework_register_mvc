@@ -12,6 +12,7 @@
   }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -67,6 +68,8 @@
   echo "$(document).ready(function() {";
   echo "var tableData = [";
   foreach($arrayUsers as $user) {
+    $userId = $session->setSession("id".$user["cli_id"], $user["cli_id"]);
+
     echo "{";
     echo "'id': '" . $user['cli_id'] . "',";
     echo "'name': '" . $user['cli_nome'] . "',";
@@ -75,7 +78,7 @@
     echo "'cpf': '" . $user['cli_cpf'] . "',";
     echo "'email': '" . $user['cli_email'] . "',";
     echo "'password': '" . $user['cli_senha'] . "',";
-    echo "'update': '" . 'update' . "'";
+    echo "'update': '<form method=\"post\" action=\"update.php\"><input type=\"hidden\" name=\"id\" value=\"{$user['cli_id']}\"><input type=\"hidden\" name=\"name\" value=\"{$user['cli_nome']}\"><input type=\"hidden\" name=\"surname\" value=\"{$user['cli_sobrenome']}\"><input type=\"hidden\" name=\"sex\" value=\"{$user['cli_sexo']}\"><input type=\"hidden\" name=\"cpf\" value=\"{$user['cli_cpf']}\"><input type=\"hidden\" name=\"email\" value=\"{$user['cli_email']}\"><input type=\"hidden\" name=\"password\" value=\"{$user['cli_senha']}\"><button type=\"submit\">UPDATE</button></form>'";
     echo "},";
     
   }
@@ -83,7 +86,10 @@
   echo "$('#table').bootstrapTable({data: tableData});";
   echo "});";
   echo "</script>";
+
+
 ?>
+
 
 
 

@@ -10,7 +10,15 @@ function autoload($class_Name){
                     "../config/", 
                     "../controller/", 
                     "../model/", 
-                    "../view/");
+                    "../view/",
+                    "../../config/", 
+                    "../../controller/", 
+                    "../../model/", 
+                    "../../../view/",
+                    "../../../config/", 
+                    "../../../controller/", 
+                    "../../../model/", 
+                    "../../../view/");
                     
     foreach($arquivos as $dir){
 

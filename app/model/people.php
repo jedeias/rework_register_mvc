@@ -1,6 +1,9 @@
 <?php 
-
-require_once ("../controller/person.php");
+if(require_once ("../../controller/person.php")){
+    require_once ("../../controller/person.php");
+}else{
+    require_once ("../controller/person.php");
+}
 
     class People implements PersonControlle{
 
