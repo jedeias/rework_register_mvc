@@ -18,6 +18,7 @@
             <td>CPF</td>
             <td>E-MAIL</td>
             <td>PASSWORD</td>
+            <td>UPTDATE</td>
         </tr>
 
         <?php
@@ -47,7 +48,9 @@
                 echo("<td>". $user["cli_email"] ."</td>");
 
                 echo("<td>". $user["cli_senha"] ."</td>");
-            
+
+                echo("<td>UPTDATE</td>");
+                
                 echo"</tr>";
             }
             

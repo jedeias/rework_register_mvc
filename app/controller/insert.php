@@ -22,6 +22,8 @@ $person->userPassword($password);
 $person->userEmail($email);
 $person->userCPF($cpf);
 
+$register = new Crud();
 
+$register->insert($person);
 
 ?>

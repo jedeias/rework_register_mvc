@@ -1,5 +1,7 @@
 <?php 
 
+require_once ("../controller/person.php");
+
     class People implements PersonControlle{
 
         private $name;
@@ -13,37 +15,37 @@
         private function getUserName(){
             return $this ->name;
         }
-        public function setUserName($name){
+        private function setUserName($name){
             $this ->name = $name;
         }
         private function getUserSurname(){
             return $this ->surname;
         }
-        public function setUserSurname($surname){
+        private function setUserSurname($surname){
             $this ->surname = $surname;
         }
         private function getUserSex(){
             return $this ->sex;
         }
-        public function setUserSex($sex){
+        private function setUserSex($sex){
             $this ->sex = $sex;
         }
         private function getUserCpf(){
             return $this ->cpf;
         }
-        public function setUserCpf($cpf){
+        private function setUserCpf($cpf){
              $this ->cpf = $cpf;
         }
         private function getUserEmail(){
             return $this ->email;
         }
-        public function setUserEmail($email){
+        private function setUserEmail($email){
             $this ->email = $email;
         }
         private function getUserPassword(){
             return $this ->password;
         }
-        public function setUserPassword($password){
+        private function setUserPassword($password){
             $this ->password = $password;
         }
         public function userName($name){
@@ -75,6 +77,30 @@
         public function userPassword($password){
 
             $this->setUserPassword($password);
+        }
+
+        public function showName(){
+            return $this->getUserName();
+        }
+
+        public function showSurName(){
+            return $this->getUserSurName();
+        }
+
+        public function showSex(){
+            return $this->getUserSex();
+        }
+
+        public function showCpf(){
+            return $this->getUserCpf();
+        }
+
+        public function showEmail(){
+            return $this->getUserEmail();
+        }
+
+        public function showPassword(){
+            return $this->getUserPassword();
         }
     
     }

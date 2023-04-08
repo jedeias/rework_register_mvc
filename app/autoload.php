@@ -21,7 +21,9 @@ function autoload($class_Name){
             include_once($file);
         
         }else{
-            include_once("../controller/valiedLogin.php");
+                
+            //include_once("../controller/valiedLogin.php");
+
         }
     }
 
