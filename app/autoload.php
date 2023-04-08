@@ -18,7 +18,7 @@ function autoload($class_Name){
 
         if(file_exists($file)){
         
-            include_once($file);
+            require_once($file);
         
         }else{
                 

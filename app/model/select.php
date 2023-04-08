@@ -1,10 +1,8 @@
 <?php
 
-require_once ("../controller/selectController.php");
-
     class Select extends Connect implements SelectController{
         private function querytForLogin($email, $password){
-                        
+
             $sql = "SELECT * FROM `cliente` WHERE `cli_email` = '$email' AND `cli_senha` = '$password'";
 
             $result = $this->query($sql);
@@ -38,7 +36,7 @@ require_once ("../controller/selectController.php");
     
             var_dump($this->email, $this->password);
         
-            $databaseArray = $this->queryForLogin($this->email, $this->password);
+            $databaseArray = $this->querytForLogin($this->email, $this->password);
 
             $databaseEmail = $databaseArray['cli_email'];
             $databasepassword = $databaseArray['cli_senha'];
