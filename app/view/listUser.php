@@ -1,3 +1,17 @@
+<?php
+
+  include("../autoload.php");
+  
+  $session = new SessionController();
+
+    $email = $session->getSession("email");
+    if(empty($_SESSION)){
+      header("Location:  /php_mvc/index.html");
+      session_destroy();
+      die();
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,6 +32,16 @@
 
 <body>
 
+
+
+<div>
+  <a href="register.html">
+    <input class="btn btn-warning btn-lg" type="submit" value="Submit" />
+  </a>
+</div>
+
+
+
 <table id="table" data-search="true" data-visible-search="true">
   <thead>
   <tr>
@@ -35,7 +59,7 @@
 </table>
 
 <?php
-  include("../autoload.php");
+
   $arrayUsers = new Select();
   $arrayUsers = $arrayUsers->selectAllUsers();
 
@@ -60,4 +84,6 @@
   echo "});";
   echo "</script>";
 ?>
+
+
 

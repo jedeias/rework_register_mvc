@@ -50,6 +50,11 @@
             }else {
                 header("location: ../app/view/listUser.php");
                 echo"Os dados conferem";
+
+                $sessionController = new SessionController();
+                $sessionController->setSession("email", $databaseArray['cli_email']);
+
+               
             }
     
         }
