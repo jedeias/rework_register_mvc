@@ -37,7 +37,7 @@
 
 <div>
   <a href="register.html">
-    <input class="btn btn-warning btn-lg" type="submit" value="Submit" />
+    <input class="btn btn-warning btn-lg" type="submit" value="Register" />
   </a>
 </div>
 

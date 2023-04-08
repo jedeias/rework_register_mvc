@@ -26,4 +26,8 @@ $register = new Crud();
 
 $register->insert($person);
 
+header("Refresh: 3; ../../view/ListUser.php");
+
+echo("cadastrado com sucesso");
+
 ?>

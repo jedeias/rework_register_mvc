@@ -26,14 +26,6 @@ class Crud extends Connect implements CrudController{
     private function insertInto(object $person){
         $id = rand(1, 4568743445);
 
-        echo"$id";
-
-        echo"<br>";
-        echo"26↓";
-
-        echo"<pre>";
-        print_r($person);
-
         $name = $person->showName();
 
         $surName = $person->showSurName();
@@ -51,12 +43,6 @@ class Crud extends Connect implements CrudController{
     }
 
     private function updateUser(object $person, $id){
-
-        echo"<pre>";
-        print_r($person);
-        echo"<br>$id<br>";
-
-        print_r($person);
 
         $name = $person->showName();
 

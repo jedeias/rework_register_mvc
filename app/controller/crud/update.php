@@ -32,4 +32,8 @@ $register = new Crud();
 
 $register->update($user, $id);
 
+header("Refresh: 3; ../../view/ListUser.php");
+
+echo("alterado com sucesso");
+
 ?>
