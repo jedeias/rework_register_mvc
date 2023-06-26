@@ -1,6 +1,3 @@
-Ótimo! Vamos criar o arquivo README.md para o seu projeto "rework_register_MVC", onde você fez a reciclagem do projeto anterior "register_MVC" adicionando melhorias na arquitetura MVC, orientação a objetos e usando Bootstrap para o frontend. Aqui está o conteúdo sugerido para o arquivo:
-
-```markdown
 # Rework Register MVC
 
 This is a rework of the "register_MVC" project, aiming to improve the MVC architecture and object-oriented design. The project utilizes PHP 7.4.19, MySQL 5.7.33, and Bootstrap 5 for the frontend.
